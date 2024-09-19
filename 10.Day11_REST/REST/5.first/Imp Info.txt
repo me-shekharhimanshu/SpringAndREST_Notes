@@ -1,0 +1,5 @@
+@GetMapping(value = "hello/{name}/{age}")
+
+It means if your dynamic web project name is "pgs99l_REST_First" and your service is running on the same machine [tomcat server of the same machine] and port no. is 8080, you should access this service by giving following API Endpoint inside ARC.
+
+http://localhost:8080/pgs99l_REST_First/hello/Arun/22

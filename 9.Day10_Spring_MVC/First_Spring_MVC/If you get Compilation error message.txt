@@ -1,0 +1,14 @@
+if you get following compilation error message:
+
+The type org.springframework.http.HttpStatus cannot be resolved. It is indirectly referenced from required .class files
+
+
+1) close eclipse
+2) got to
+user\.m2\repository\org
+3) delete "springframework" folder.
+4) restart eclipse
+5) right click on project name
+	 maven 
+		update project
+			force update

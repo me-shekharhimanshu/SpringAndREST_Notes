@@ -1,0 +1,5 @@
+This example assumes that table "Student" is created with rollno,name and age.
+In addition to that it also assumes that records are inserted in the table.
+
+if not, create table and insert some records. Then only this example will work.
+

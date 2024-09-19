@@ -1,0 +1,3 @@
+SpringMVC supports some html tags. Those tags are available in
+
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>

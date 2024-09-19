@@ -1,0 +1,5 @@
+return new ModelAndView("bookNew","mybook",defaultBook);
+
+it takes the control to "bookNew.jsp" and it passes "defautBook" instance to the jsp.
+"mybook" is a name by which Book class instance is saved.
+

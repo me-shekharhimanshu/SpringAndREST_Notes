@@ -1,0 +1,6 @@
+<property name="prefix" value="/"/>
+<property name="suffix" value=".jsp"/>
+
+it means if controller class returns a string e.g. "hello",
+"hello.jsp" will be searched inside "WebContent".
+

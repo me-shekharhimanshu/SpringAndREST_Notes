@@ -1,0 +1,12 @@
+run this project on eclipse
+
+now go to Advanced Rest Client
+
+and run it like
+
+http://localhost:8080/ProjectName/hello/Abc/15
+
+
+here "hello" is a request mapping for Rest Controller
+
+Abc and 15 are name and age respectively which one can change.

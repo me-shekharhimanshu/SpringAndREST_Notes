@@ -1,0 +1,5 @@
+SpringMVC
+You need JSP or thymeleaf for "View"(i.e. for showing response and as welcome page).
+
+REST services
+Don't need either JSP or thymeleaf as there is no "View" in case of REST services. Response is directly sent to the client.

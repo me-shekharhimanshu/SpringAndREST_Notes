@@ -1,0 +1,5 @@
+JSF
+In jsf, application starts from jsp/xhtml which is always a home page and there when you enter values and click on submit then object is created setter methods are called and there is invoke application phase i.e. excecute method and then to DAO or other places. From execute method we used to return success/fail files.
+
+SpringMVC
+Here it goes to java class first. @GetMapping method is there in java class, it goes there. From there it comes to the form. In form you fill the values. Then control goes to the same controller but in @PostMapping method and after posting to other files.

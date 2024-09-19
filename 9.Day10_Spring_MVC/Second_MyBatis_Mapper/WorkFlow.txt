@@ -1,0 +1,14 @@
+web.xml
+studentdispatcher servlet(which will load on startup and provided by spring mvc)
+StudentController: @GetMapping(new_student)
+stud.jsp(with mystudent taken from controller class)
+On submit: a new object of student should be created and all setter methods will 
+be called and the newly initialized will be passed to @PostMapping method
+studentDAOImpl: add method: student ref is added
+success.jsp
+if(add more student) then StudentController: @GetMapping(new_student)
+else if(view student) then StudentController: @GetMapping(list_student)
+
+StudentController: @GetMapping(list_student)
+studentDAOImpl: viewAll() method
+view.jsp

@@ -1,0 +1,27 @@
+How to reach a particular @PostMapping method by clicking a button in a html form?
+To reach a particular @PostMapping method in a Spring MVC controller class by clicking a button in an HTML form, you can use the action attribute of the form to specify the URL of the corresponding endpoint.
+
+For example, let's say you have a form with two buttons, one for saving data and another for updating data. You can define the form like this:
+
+<form method="post" action="/example/saveOrUpdate">
+    <!-- form fields -->
+    <button type="submit" name="save" value="true">Save</button>
+    <button type="submit" name="update" value="true">Update</button>
+</form>
+
+In this example, we are using the POST method for the form, and specifying the action attribute as /example/saveOrUpdate. This URL maps to a @PostMapping method in the ExampleController class that can handle both save and update actions:
+
+@PostMapping("/saveOrUpdate")
+public String saveOrUpdateData(@ModelAttribute Data data, @RequestParam(value="save", required=false) boolean save, @RequestParam(value="update", required=false) boolean update) {
+    if (save) {
+        // handle save action
+    } else if (update) {
+        // handle update action
+    }
+    return "redirect:/example/form";
+}
+
+
+In this @PostMapping method, we are checking the values of the save and update parameters to determine which action was triggered. We can do this by including two additional @RequestParam annotations for each button in the form. The required=false parameter is used to indicate that a button is optional and may not be present in the form submission.
+
+When the user clicks the "Save" or "Update" button, the corresponding value (true) will be submitted along with the form data. In the @PostMapping method, we can use these values to determine which action was triggered and handle it accordingly.

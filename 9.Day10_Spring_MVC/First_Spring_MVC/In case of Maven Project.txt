@@ -1,0 +1,12 @@
+in case of maven project
+
+right click "main"
+	new folder  "java"
+		right click new package
+			mypack
+
+	copy "Book.java" and "BookNewController" inside "mypack" folder.
+
+copy "bookdispatcher-servlet" inside "WEB-INF" folder.
+
+replace project's "web.xml" with given "web.xml"

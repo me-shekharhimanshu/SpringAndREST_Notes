@@ -1,0 +1,4 @@
+Student.xml inside "mypack"
+
+mybatis-config.xml,web.xml and studentdispatcher-servlet inside "WEB-INF"
+

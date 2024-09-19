@@ -1,0 +1,24 @@
+SqlSessionTemplate is not required at all.
+
+
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+  <property name="basePackage" value="mapper" />
+</bean> 
+
+above entry inside "studentdispatcher-servlet.xml" is required so that IOC container can inject :
+
+
+	@Autowired
+	private Student_Mapper mapper;
+
+
+
+ @Insert(insert)
+ 
+   void insert(Student student);
+
+
+
+
+
+

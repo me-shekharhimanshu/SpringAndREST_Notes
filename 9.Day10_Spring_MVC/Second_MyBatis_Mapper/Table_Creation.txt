@@ -1,0 +1,1 @@
+create table student(rollno int(3) primary key,name varchar(30),age int(3));

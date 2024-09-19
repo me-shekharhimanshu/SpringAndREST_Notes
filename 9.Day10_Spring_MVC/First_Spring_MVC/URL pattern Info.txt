@@ -1,0 +1,35 @@
+ <servlet>
+   	<servlet-name>FirstServ</servlet-name>
+   	<servlet-class>FirstServ</servlet-class>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>FirstServ</servlet-name>
+   	<url-pattern>/FirstServ</url-pattern>
+   </servlet-mapping>
+
+<url-pattern>/FirstServ</url-pattern>
+	means that whenever user invokes a servlet by "/FirstServ", FirstServ servlet should be executed.
+
+
+
+<servlet>
+   	<servlet-name>bookdispatcher</servlet-name>
+   	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+   	<load-on-startup>1</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>bookdispatcher</servlet-name>
+   	<url-pattern>*.do</url-pattern>
+   </servlet-mapping>
+
+
+<url-pattern>*.do</url-pattern>
+  url pattern *.do here means that whenever request comes for anything.do i.e. add.do , modify.do , view.do etc. , DispatcherServlet should be executed.
+
+
+
+
+
+
+
+

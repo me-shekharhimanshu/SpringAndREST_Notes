@@ -1,0 +1,5 @@
+@ModelAttribute("mb") Book book
+
+is same as saying
+
+request.setAttribute("mb",book);

@@ -1,0 +1,9 @@
+In JSF, what are Model, View and Controller?
+M- managed bean
+V- facelets[xhtml]
+C- FacesServlet
+
+In SpringMVC, what are Model, View and Controller?
+M- Controller
+V- JSP/thymeleaf(not in syllabus)
+C- DispatcherServlet[Front Controller]

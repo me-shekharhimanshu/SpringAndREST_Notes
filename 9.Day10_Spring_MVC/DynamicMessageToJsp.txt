@@ -1,0 +1,49 @@
+ControllerClass
+@GetMapping("/old_login")
+public ModelAndView userLogin()
+{
+Customer c=new Customer();
+return new ModelAndView("CustomerLogin","oldcust",c);
+}
+
+@PostMapping("/old_login")
+public ModelAndView loginSubmit(Customer customer)
+{
+boolean result=cdao1.checkLogin(customer);
+if(result==false) {
+ModelAndView modelAndView = new ModelAndView("CustomerLogin");
+modelAndView.addObject("message", "Credentials are wrong");
+return modelAndView; //Fail
+} else {
+return new ModelAndView("FindHotel");//success
+}
+}
+
+CustomerLogin.jsp
+
+<body>
+<div class="container">
+	<h1>Please enter your login credentials.</h1>
+	<c:if test="${not empty message}">
+		<div style="color:red">${message}</div>
+	</c:if>
+	<form:form method="post" modelAttribute="oldcust">
+		<table>
+			<tr>
+				<td><label> Contact No.:<span style="color: red;">*</span> </label></td>
+				<td><form:input path="mobno" type="text" placeholder="Enter 10 digit number"
+						pattern="^[0-9]{5,10}$" /></td>
+			</tr>
+			<tr>
+				<td><label> Password: <span style="color: red;">*</span></label></td>
+				<td><form:input path="password" type="password" pattern=".{4,10}"
+						placeholder="Password" /></td>
+			</tr>
+			<tr>
+				<td> <input type="submit" id="sbmt" value="Submit"></td>
+			</tr>
+		</table>
+	</form:form>
+</div>
+</body>
+In the above code, the loginSubmit() method now returns a ModelAndView object with a view name "CustomerLogin" and adds a message object with the key "message" and the value "Credentials are wrong". In CustomerLogin.jsp, the message is displayed using a JSTL tag <c:if> which checks if the message object is not empty and displays the message in a <div> tag with red color.

@@ -1,0 +1,17 @@
+Controller is the one which returns control to "View" i.e. JSP.
+That's why Controller's method can either return "ModelAndView" or "String".  Both ModelAndView and String consist of JSP name.
+
+
+RestController is the one which returns the response directly to the client.
+
+But then what is the exact meaning of RestController?
+ans:-In case of RESTful services, controller is supposed to return the response directly to the client. For this to work on the Controller class we have to apply two annotations i.e.
+
+@Controller
+@ResponseBody
+
+now instead of giving these two annotations you can use following annotation:
+@RestController
+
+It means @RestController=@ResponseBody+@Controller
+

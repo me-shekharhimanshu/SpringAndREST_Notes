@@ -1,0 +1,13 @@
+"Student_Mapper.java" and "StudentDAOImpl.java" have to be in different packages. if they are in same package say e.g. "mypack" then we get following error:
+
+
+No unique bean of type [mypack.StudentDAO] is defined: expected single matching bean but found 2: [studentDAOImpl, studentDAO]
+
+it is because we have specified 
+
+<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+  <property name="basePackage" value="mypack" />
+</bean>
+
+here IOC Container will create implementation of all the interfaces available inside "mypack" i.e. Student_Mapper and StudentDAO.
+this results into two implementations of StudentDAO , one we have created and other created by IOC Container.

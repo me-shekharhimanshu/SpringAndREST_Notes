@@ -1,0 +1,10 @@
+Go to Rest Client and type
+
+
+http://localhost:8080/Spring_Rest_Database/GetStudents.do
+
+
+make sure method is "GET"
+
+
+click on "Send"

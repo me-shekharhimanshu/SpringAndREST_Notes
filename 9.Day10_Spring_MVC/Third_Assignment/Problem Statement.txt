@@ -1,0 +1,13 @@
+create a table person
+	id int(4) primary key,name varchar(20),address varchar(20),age
+
+Person class with
+id,name,address and age
+setters and getters
+toString() method.
+
+create a form in jsp "person.jsp" which will accept id,name,address and age and on submit , person record should be entered in the table.
+
+ "PersonController" with "@GetMapping" and "@PostMapping" methods.
+
+You need to use "Mapper" here

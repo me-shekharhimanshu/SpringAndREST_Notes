@@ -1,0 +1,5 @@
+<form:form method="post"
+
+it means on submit control will go to the controller which has tot
+
+"book.do" as mapping and the method which has @PostMapping annotation applied.

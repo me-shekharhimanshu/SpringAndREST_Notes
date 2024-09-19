@@ -1,0 +1,4 @@
+Name of SpringBean configuration file: NameOfServlet-servlet.xml
+
+e.g.In this project, servlet name is bookdispatcher as mentioned in web.xml.
+Thus, spring bean configuration file is: bookdispatcher-servlet.xml 
