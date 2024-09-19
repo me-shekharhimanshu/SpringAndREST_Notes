@@ -1,0 +1,64 @@
+interface Weapon
+{
+	void attack();
+}
+class Gun implements Weapon
+{
+	public void attack(){......}
+}
+class Sword implements Weapon
+{
+	public void attack(){......}
+}
+class Missiles implements Weapon
+{
+	public void attack(){......}
+}
+class Soldier
+{
+	void perform()
+	{
+		Gun g=new Gun(); // tight coupling
+		g.attack();
+	}
+}
+
+
+class Soldier
+{
+	private Weapon w;
+	public Soldier(Weapon w) //constructor injection
+	{
+		this.w=w;
+	}
+	void fight() 
+	{
+		w.attack();
+	}
+}
+
+How Spring's IoC container will help us in loose coupling using Constructor injection?
+-We have to pass the instruction: Create a Soldier class object and pass "Gun" to the parameterized constructor(This is known as constructor injection).
+The instruction will be taken care of by the IoC container.
+
+
+class Soldier
+{
+	private Weapon w;
+	public setWeapon(Weapon w) // setter injection
+	{
+		this.w=w;
+	}
+	void fight() 
+	{
+		w.attack();
+	}
+}
+
+How Spring's IoC container will help us in loose coupling using Setter injection?
+-We have to pass the instruction: Create a Soldier class object and pass "bomb" to the setter method(This is known as setter injection).
+The instruction will be taken care of by the IoC container.
+
+
+
+IOC Container is going to do either constructor injection or setter injection

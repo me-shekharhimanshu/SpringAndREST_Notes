@@ -1,0 +1,16 @@
+In java we do:
+
+Pojo based programming
+
+jdbc
+
+ORM tools
+
+Enterprise Applications
+	[RMI,EJB]
+
+MVC based Applications
+
+
+
+-Spring framework was released by Rod Johnson in 2005 which provides a great support for all the above mentioned Applications.

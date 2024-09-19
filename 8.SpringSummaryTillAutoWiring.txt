@@ -1,0 +1,5 @@
+Spring
+-Provides more loose coupling(by make Main function loosely coupled which was not the case before spring)
+-It facilitates this using IoC container which provides dependency injection(i.e.Constructor and Setter Injection)
+-For this we use bean and property tag inside xml file(explicit wiring or autowiring="no") till we study autowiring
+-After studying autowiring we will use autowiring="byType/constructor" which is more effective than "byName" instead of property tag but bean tag is still there. This is implicit wiring.

@@ -1,0 +1,10 @@
+What is Framework?
+
+-Framework consist of classes and interfaces.
+
+-These classes and interfaces can work together in order to solve a particular problem.
+
+-Framework components are reusable.
+
+A framework is similar to an application programming interface (API), though technically a framework includes an API. As the name suggests, a framework serves as a foundation for programming, while an API provides access to the elements supported by the framework. A framework may also include code libraries, a compiler, and other programs used in the software development process.
+

@@ -1,0 +1,37 @@
+interface Weapon
+{
+	void attack();
+}
+class Gun implements Weapon
+{
+	public void attack(){......}
+}
+class Sword implements Weapon
+{
+	public void attack(){......}
+}
+class Missiles implements Weapon
+{
+	public void attack(){......}
+}
+class Soldier
+{
+	void perform()
+	{
+		Gun g=new Gun(); // tight coupling
+		g.attack();
+	}
+}
+
+public class MyApp
+{
+	public static void main(String args[])
+	{
+		Soldier s=new Soldier();
+		s.perform();
+	}
+}
+
+
+*in the above code,Soldier class is tightly coupled with a specific Weapon say e.g. "Gun". What if he wants to use another Weapon? we need to change the code inside "perform" method. This is called as "Program to implementation" which gives you maintenance drawback. 	
+*how do we make soldier use any weapon. i.e. how do we make Soldier loosely coupled with a specific weapon?
